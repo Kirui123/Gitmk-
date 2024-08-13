@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SkillSwap</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Find Skills</a>
+            <a href="#">Offer Skills</a>
+        </nav>
+    </header>
+    <main>
+        <section id="find-skills">
+            <h2>Find Skills</h2>
+            <input type="text" id="search" placeholder="Search for skills...">
+            <ul id="skill-list">
+                <!-- Skill items will be dynamically inserted here -->
+            </ul>
+        </section>
+        <section id="offer-skills">
+            <h2>Offer Your Skills</h2>
+            <form id="offer-form">
+                <label for="skill-name">Skill Name:</label>
+                <input type="text" id="skill-name" required>
+                <label for="skill-description">Description:</label>
+                <textarea id="skill-description" required></textarea>
+                <button type="submit">Offer Skill</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
